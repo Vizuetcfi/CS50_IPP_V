@@ -40,14 +40,50 @@ Create by: Vizuetcf
 
 ## Functions
 
-* Functions are verbs or actions that the computer or computer language will already know how to perform.
+* Functions are verbs or actions that the computer or computer language will already know how to perform (realizar).
+
+  A function is like an action or a verb that lets you do something in the program, and generally (*generalmente, por lo general, en general*) speaking (*en general, en terminos generales, de forma general*), any language comes with some predetermined set of *functions*-- some very basic actions or verbs that the computer will already know how to do for you, that the language, really, will know how to do for you. The programmer, the human, can use those functions at will to get the computer to do those things.
+
 * In your ``hello.py`` program, the ``print`` function knows how to print to the terminal window.
+
+ It prints whatever it is you want it to print. 
+
 * The ``print`` function takes arguments. In this case, ``"hello, world"`` are the arguments that the ``print`` function takes.
+
+### Argument
+
+* An argument is an input to a function that somehow influences its behavior.
+
+  The people who invented Python, didn't necessarily know what it is you and I are going to want to print to the screen, so they designed this print function using these parentheses with the ability to take as input some string of text, be it in English or any other human language, that is what you want this function ultimately to print onto the screen.
+  
+  It's showing us ``hello, world`` on the screen.
+
+  *Ejemlos*:
+
+  ```python
+  print   #  1
+    (Hello, world)   #  2
+  ```
+    1. Function 
+    2. Argument
+
+#### Side (lateral, 'a un' lado) effect (efecto colateral, o secundario)
+
+In programming, the relationship between an *argument* and a *function* is known (conocido) as a side effect, it can be visual or can be an audio. In this case, it's something that appears on the screen and functions, therefore, can indeed have these side effects.
+
+One of the things they can do as this verb or action is to display on the screen as a side effect, something like those words that we wanted:
+
+```bash
+hello, world.
+```
 
 
 ## Bugs
 
-* Bugs are a natural part of coding. These are mistakes, problems for you to solve! Don’t get discouraged! This is part of the process of becoming a great programmer.
+Bugs are a natural part of coding. These are mistakes, problems for you to solve! Don’t get discouraged! This is part of the process of becoming a great programmer.
+
+A bug is a mistake in a program and they can take so many forms. 
+
 * Imagine in our ``hello.py`` program that accidentally typed ``print("hello, world"`` notice that we missed the final ``)`` required by the compiler. If I purposefully make this mistake, you’ll the compiler will output an error in the terminal window!
 * Often, the error messages will inform you of your mistake and provide you clues on how to fix them. However, there will be many times that the compiler is not this kind.
 
@@ -544,8 +580,9 @@ Through the work of this single lecture, you have learned abilities that you wil
 
 # Bibliografía
 
-> * [Lecture 0](https://cs50.harvard.edu/python/2022/notes/0/)
 > * [Week 0 Functions](https://cs50.harvard.edu/python/2022/weeks/0/)
+> * [Lecture 0](https://cs50.harvard.edu/python/2022/notes/0/)
+> * [Transcript](https://cdn.cs50.net/python/2022/x/lectures/0/lang/en/lecture0.txt)
 > * [Gradebook](https://cs50.me/cs50p)
 
 
