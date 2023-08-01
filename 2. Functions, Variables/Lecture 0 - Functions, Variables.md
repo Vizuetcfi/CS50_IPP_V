@@ -102,6 +102,56 @@ print("hello, world")
 
 * This edit alone, however, will not allow your program to output what your user inputs. For that, we will need to introduce you to variables
 
+### Sintaxis error
+
+When we talk about of a syntax error, which (*que, but not a cuestion*) refers (*que se refuere, que hace referencia a, que hace referencia* ) to my having made a mistake at my keyboard. And this one, is pretty (*bonito, precioso*) straightforward (*sencillo, direc tamente, sin complicaciones*) (*bastante sencllo, bastante directo, bastante claro*). 
+
+  *Ejemplos*:
+  ```python
+  
+  print("Hello, world"  #   1
+  
+  ```
+  ```bash
+  
+  $ py hello.py
+
+  ## --- ##
+  
+  $ SyntaxError: '(' was never closed
+
+  ```
+  > Closed: *Encerrado, encerrada*
+  
+  1. It says that this open parenthesis was never closed.
+  
+  > That's probably pretty intuitive, and i need to do close it. 
+
+---
+
+## Question round
+
+### Quesiton 1
+
+- **AUDIENCE**: Could I write code inside a word or, for example, Microsoft Excel? And what's the barrier to doing that? 
+
+- **DAVID MALAN**: A really good question, and allow me to very explicitly say to the entire internet that you should not write code with Microsoft Word. I mentioned that only because it's a tool via which you can write text and code is, at the end of the day, just text. But it's not the right tool for the job. We don't need bold facing, underlining, paragraphs and the like. We generally want something much simpler than Microsoft Word or Google Docs. And so VS Code is an example of just a more general purpose text editor. Its purpose in life is to allow you, the human, to edit text. Nowadays these text editors come with many more features. In fact, you'll notice that even in my code here, even though it's just one line, there's a bit of color to it. The word "print" for me is appearing in blue. The parentheses are black. And we'll see as we write more lines of code, more and more of the lines will come to life in various colors.
+
+Now that's just one feature of a text editor. We'll see too that it has features like this built-in terminal window. It's going to have a built-in tool for debugging or finding problems with code. And it's just a very popular tool nowadays, but there are many, many others out there. You're welcome to use them for this course and beyond. We just happen to use this one in large part too because you can also use VS Code nowadays for free in the cloud. How about one other question here on programming with Python or hello, world or syntax more generally? 
+
+
+### Question 2
+
+- **AUDIENCE**: Yeah I was trying to ask if it's not possible to run the computer using the terminal window? 
+
+- **DAVID MALAN**: I think I heard is it not-- if it's possible to run the program without the terminal window? Are you-- 
+
+- **AUDIENCE**: Yes, sir. 
+
+- **DAVID MALAN**: OK, you froze for me again. But let me infer what the question is. So in this environment, as I've configured my computer, I can only run these Python programs via the terminal window. Now that's good for me, the programmer, or the person who's trying to learn how to program, but it's not very good if you want to ship this software and have other people use your actual code. You can absolutely write programs and then allow other people to use, not a command line interface, but a graphical user interface or GUI-- G-U-I. 
+This is just one mechanism and perhaps(*talvez, eventualmente*), I think, the best one with which to start writing code because eventually it's going to give us a lot more control. 
+
+---
 
 ## Variables
 
