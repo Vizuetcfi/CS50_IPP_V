@@ -149,14 +149,34 @@ When we talk about of a syntax error, which (*que, but not a cuestion*) refers (
 - **AUDIENCE**: Yes, sir. 
 
 - **DAVID MALAN**: OK, you froze for me again. But let me infer what the question is. So in this environment, as I've configured my computer, I can only run these Python programs via the terminal window. Now that's good for me, the programmer, or the person who's trying to learn how to program, but it's not very good if you want to ship this software and have other people use your actual code. You can absolutely write programs and then allow other people to use, not a command line interface, but a graphical user interface or GUI-- G-U-I. 
-This is just one mechanism and perhaps(*talvez, eventualmente*), I think, the best one with which to start writing code because eventually it's going to give us a lot more control. 
+- This is just one mechanism and perhaps(*talvez, eventualmente*), I think, the best one with which to start writing code because eventually it's going to give us a lot more control. 
 
 ---
 
-## Variables
+## Return values
 
-* A variable is just a container for a value within your own program.
-* In your program, you can introduce your own variable in your program by editing it to read
+I can write the next code in vsc:
+
+```python
+Input("What's your name?")
+print("My namje is Fernando")
+```
+
+Wen we run that code in the terminal, we can note a mistake, that code obtein just one output:
+
+```bash
+py hola_mundo.py
+
+My name is Fernando
+```
+
+### Variables
+
+To solved that problem, we need know the concept of ***Variable***.
+
+> A variable is just a container for a value within your own program.
+
+* In your program, you can introduce your own variable in your program by editing it to read.
 
 ```python
 name = input("What's your name? ")
@@ -191,8 +211,7 @@ David
 * We are getting closer to the result we might intend!
 * You can learn more in Python’s documentation on [data types](https://docs.python.org/3/library/datatypes.html).
 
-
-## Comments
+### Comments
 
 * Comments are a way for programmers to track what they are doing in their programs and even inform others about their intentions for a block of code. In short, they are notes for yourself and others that will see your code!
 * You can add comments to your program to be able to see what it is that your program is doing. You might edit your code as follows:
@@ -200,14 +219,17 @@ David
 ```python
 # Ask the user for their name
 name = input("What's your name? ")
+
+# Say hello to user
 print("hello,")
 print(name)
 ```
 
 * Comments can also serve as to-do list for you.
 
+## Pseudocode 
 
-## Pseudocode
+(Minute: 22:26)
 
 * Pseudocode is an important type of comment that becomes a special type of to-do list, especially when you don’t understand how to accomplish a coding task. For example, in your code, you might edit your code to say:
 
