@@ -78,7 +78,7 @@ hello, world.
 ```
 
 
-## Bugs
+## Bugs and Debugging (Depuración)
 
 Bugs are a natural part of coding. These are mistakes, problems for you to solve! Don’t get discouraged! This is part of the process of becoming a great programmer.
 
@@ -87,7 +87,82 @@ A bug is a mistake in a program and they can take so many forms.
 * Imagine in our ``hello.py`` program that accidentally typed ``print("hello, world"`` notice that we missed the final ``)`` required by the compiler. If I purposefully make this mistake, you’ll the compiler will output an error in the terminal window!
 * Often, the error messages will inform you of your mistake and provide you clues on how to fix them. However, there will be many times that the compiler is not this kind.
 
+### ¿What is debugging?
 
+La depuración es el proceso de encontrar y solucionar errores en el código fuente de cualquier software. Cuando un software no funciona tal y como se espera, los programadores de computadoras estudian el código para determinar por qué ocurren algunos errores. Con este objetivo, los programadores utilizan herramientas de depuración para ejecutar el software en un entorno controlado, comprobar el código paso a paso y analizar y solucionar el error [1].
+
+---
+
+Extraído de: ***[¿Qué es la depuración?](https://aws.amazon.com/es/what-is/debugging/)***
+#### ¿Cómo funciona el proceso de depuración?
+
+El proceso de depuración suele requerir los siguientes pasos. 
+
+**Identificación de errores**
+
+Los desarrolladores, los encargados de las pruebas y los usuarios finales informan de los errores que descubren mientras prueban o usan el software. Los desarrolladores localizan la línea exacta de códigos o el módulo de código que causa el error. Esto puede ser un proceso tedioso y que requiere mucho tiempo. 
+
+**Análisis de errores**
+
+Los codificadores analizan el error mediante el registro de todos los cambios de estado del programa y los valores de los datos. También dan prioridad a la corrección de errores en función de su impacto en la funcionalidad del software. El equipo de software también identifica un calendario para la corrección de errores en función de los objetivos y requisitos de desarrollo.
+
+**Corrección y validación**
+
+Los desarrolladores arreglan el error y hacen pruebas para asegurarse de que el software continúa en funcionamiento como se espera. Pueden escribir nuevas pruebas para comprobar si el error se repite en el futuro.
+
+****_Comparación entre la depuración y las pruebas_****
+
+La depuración y las [pruebas](https://aws.amazon.com/blogs/devops/tag/testing/) son procesos complementarios que garantizan que los programas de software funcionen como deben. Después de escribir una sección completa o parte de un código, los programadores realizan pruebas para identificar fallos y errores. Una vez encontrados los errores, los codificadores pueden comenzar el proceso de depuración y trabajar para librar al software de cualquier error.
+
+#### ¿Cuáles son los errores de codificación que se deben depurar?
+
+Los defectos de software surgen debido a la complejidad inherente al desarrollo de software. También se observan pequeños errores de producción después de que el software esté en funcionamiento porque los clientes lo usan de forma inesperada. A continuación, presentamos algunos tipos de errores comunes que suelen requerir el proceso de depuración.
+
+**Errores de sintaxis**
+
+Un error de sintaxis es un fallo que se produce cuando un programa de computación tiene una sentencia mal escrita. Es el equivalente a una errata o error ortográfico en el procesamiento de textos. El programa no se compilará ni se ejecutará si hay errores de sintaxis. El software de edición de código suele resaltar este error.
+
+1. **Errores semánticos**
+
+Los errores semánticos se producen por el uso inadecuado de las declaraciones de programación. Por ejemplo, si traduce la expresión _x_/(2 π) a [Python](https://aws.amazon.com/what-is/python/?trk=faq_card), podría escribir lo siguiente:
+
+_y = x / 2 * math.pi_
+
+Sin embargo, esta declaración no es correcta porque la multiplicación y la división tienen la misma prioridad en Python y se evalúan de izquierda a derecha. Por lo tanto, esta expresión se calcula como (xπ)/2, lo que da lugar a errores.
+
+2. **Errores lógicos**
+
+Los errores lógicos se producen cuando los programadores tergiversan el proceso o el algoritmo de un programa de computación. Por ejemplo, el código puede salir de un bucle demasiado pronto o puede tener un resultado if-then incorrecto. Puede identificar los errores lógicos si recorre el código para varios escenarios diferentes de entrada o salida.
+
+3. **Errores de tiempo de ejecución**
+
+Los errores de tiempo de ejecución se producen debido al entorno informático en el que se ejecuta el código del software. Algunos ejemplos son el espacio de memoria insuficiente o el desbordamiento de la pila. Para resolver los errores de tiempo de ejecución, puede rodear las declaraciones en bloques try-catch o registrar la excepción con un mensaje apropiado.
+
+#### ¿Cuáles son algunas de las estrategias de depuración más comunes?
+
+Hay varias estrategias que los programadores usan para minimizar los errores y reducir el tiempo necesario para la depuración.
+
+1. **Desarrollo incremental de programas**
+
+El desarrollo incremental consiste en desarrollar los programas en secciones manejables, de modo que se prueben con frecuencia pequeñas porciones del código. De este modo, los programadores pueden localizar los errores que encuentren. También les permite trabajar en un error a la vez en lugar de en múltiples errores después de escribir grandes secciones de código.
+
+2. **Rastreo**
+
+El rastreo es un método popular de depuración, sobre todo para los programas más pequeños. Los desarrolladores trabajan hacia atrás desde el lugar donde se produjo un error grave para identificar el punto exacto de aparición en el código. Lamentablemente, el proceso se vuelve más difícil de lograr a medida que aumenta el número de líneas de código.
+
+3. **Depuración remota**
+
+La depuración remota es la depuración de una aplicación que se ejecuta en un entorno distinto al de su máquina local. Por ejemplo, puede usar herramientas de depuración instaladas de forma remota para resolver el error.
+
+4. **Registro**
+
+La mayoría de los programas de computación registran los datos internos y otra información crítica, como el tiempo de ejecución y los estados del sistema operativo, en archivos de registro. Los desarrolladores estudian los archivos de registro para localizar y resolver los errores. También usan herramientas como los analizadores de registros para automatizar el procesamiento de los archivos de registro.   
+
+5. **Depuración en la nube**
+
+La depuración de aplicaciones complejas en la nube es un reto porque los desarrolladores tienen que emular las arquitecturas de la nube en las máquinas locales. Con el tiempo, pueden surgir diferencias de configuración entre el entorno de la nube y el entorno emulado. Esto da lugar a más errores en producción y a ciclos de desarrollo más largos. Se necesitan herramientas especiales para una depuración más eficaz de la nube.
+
+---
 ## Improving Your First Python Program
 
 * We can personalize your first Python program.
@@ -162,19 +237,19 @@ Input("What's your name?")
 print("My namje is Fernando")
 ```
 
-Wen we run that code in the terminal, we can note a mistake, that code obtein just one output:
+Wen we run that code in the terminal, we can note a mistake, that code obtain just one output:
 
 ```bash
 py hola_mundo.py
 
-My name is Fernando
+My name is <name>
 ```
 
 ### Variables
 
 To solved that problem, we need know the concept of ***Variable***.
 
-> A variable is just a container for a value within your own program.
+> A variable is just a container for a value within (*en*, *dentro de*, *en la direccion*) your own program.
 
 * In your program, you can introduce your own variable in your program by editing it to read.
 
@@ -211,7 +286,12 @@ David
 * We are getting closer to the result we might intend!
 * You can learn more in Python’s documentation on [data types](https://docs.python.org/3/library/datatypes.html).
 
+---
+
+## Comments and Pseudocode
 ### Comments
+
+Comments are notes to yourself in your code and you include comments by way of a special symbol-- **in Python it's going to be the *hash* symbol, typically**-- and that allows you to write the equivalent of a note to yourself but in a way that's not going to break your code. The computer actually ignores your comment. It's just there for you, it's just there for your teacher, it's just there for your colleague with whom (*que*, *a quien*, *quien*, *cuyo*) you're sharing ultimately that code.
 
 * Comments are a way for programmers to track what they are doing in their programs and even inform others about their intentions for a block of code. In short, they are notes for yourself and others that will see your code!
 * You can add comments to your program to be able to see what it is that your program is doing. You might edit your code as follows:
@@ -227,23 +307,34 @@ print(name)
 
 * Comments can also serve as to-do list for you.
 
-## Pseudocode 
+> So this isn't really necessary for a program this small. It's pretty obvious with just one or two or three lines what the program is doing. It's just as fast to read the code than the comments, but getting into this habit is generally a good thing-- to comment your code every one or a few lines so as to remind yourself and others what it is your intent and your code is doing. What's nice about comments too is this-- comments can also serve to be sort of a to-do list for yourself.
+### Pseudocode 
 
-(Minute: 22:26)
+Pseudocode isn't a formal thing. It's not one specific language. It's just using English or your own human language to express your thoughts succinctly, methodically, algorithmically, so to speak. 
+It just kind (*tipo*) of allows (*permite*, *permite a*) (nos permite) you to outline (esbozar) your program even (*incluso*, *hasta*) in advance (*avance*, *avanzar*, *adelantas*, *anticipar*).
 
 * Pseudocode is an important type of comment that becomes a special type of to-do list, especially when you don’t understand how to accomplish a coding task. For example, in your code, you might edit your code to say:
 
 ```python
-# Ask the user for their name
+# Ask the user for their name   #  1
 name = input("What's your name? ")
 
-# Print hello
+# Print hello   #  1
 print("hello,")
 
-# Print the name inputted
+# Print the name inputted   #  1
 print(name)
-```
 
+'''
+This is a comment, i can write some lines
+whith that form
+'''   #  2
+
+```
+	1. Pseudocode, it´s like a to-do list, whith this, i can think about of what i can do tomorrow.
+	2. alternative form to do comments.
+
+# Multiple Function Arguments
 
 ## Further Improving Your First Python Program
 
@@ -254,7 +345,7 @@ print(name)
 name = input("What's your name? ")
 
 # Print hello and the inputted name
-print("hello, " + name
+print("hello, " + name)
 ```
 
 * It turns out that some functions take many arguments.
@@ -649,13 +740,16 @@ Through the work of this single lecture, you have learned abilities that you wil
 
 ---
 
-
 # Bibliografía
 
+> ***Course links***
+> 
 > * [Week 0 Functions](https://cs50.harvard.edu/python/2022/weeks/0/)
 > * [Lecture 0](https://cs50.harvard.edu/python/2022/notes/0/)
 > * [Transcript](https://cdn.cs50.net/python/2022/x/lectures/0/lang/en/lecture0.txt)
 > * [Gradebook](https://cs50.me/cs50p)
-
-
----
+> 
+> ***External links***
+> 
+> 1. [¿Qué es la depuración](https://aws.amazon.com/es/what-is/debugging/)
+> * 
